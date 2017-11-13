@@ -20,5 +20,10 @@ namespace TestLoginAuthentication.Controllers
         {
             return View();
         }
+
+        public ActionResult TestGit()
+        {
+            return View();
+        }
 	}
 }

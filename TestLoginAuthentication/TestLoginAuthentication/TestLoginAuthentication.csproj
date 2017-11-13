@@ -257,6 +257,7 @@
     <Content Include="Views\Home\MyProfile.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\MyAccount\llgin.cshtml" />
+    <Content Include="Views\Home\TestGit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
