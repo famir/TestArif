@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OfferModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <ComplexType Name="ShopLogin_Result">
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </ComplexType>
+  <EntityContainer Name="OfferEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="ShopLogin" ReturnType="Collection(OfferModel.ShopLogin_Result)" IsComposable="true">
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>
